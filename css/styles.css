@@ -1,91 +1,83 @@
 body {
-  margin: 0%;
-  background-image: url(../images/Bakgrunn.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  display: grid;
-  grid-gap: 1em;
-  grid-template-rows: auto 4fr auto;
-  grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
+  margin: 0px;
 }
-
-header {
-  grid-area: header;
-}
-main {
-  grid-area: main;
-}
-footer {
-  grid-area: footer;
-}
-
 /* HEADER */
 
 header {
   background-color: #25a3f5;
-  color: white;
   display: flex;
-  text-align: right;
-}
-
-header nav {
-  text-align: right;
-  margin-left: 1100px;
   align-items: center;
 }
 
-.logo {
-  max-width: 120px;
-  margin: 10px;
-  padding: 1px;
-}
-
-nav a {
+header a,
+i {
   color: white;
-  text-decoration: none;
-  text-align: right;
+  padding: 10px;
+}
+nav li,
+i {
+  display: inline-block;
+  margin-left: 50px;
 }
 
 nav ul {
   padding: 0px;
-  margin-top: 30px;
+  margin-left: 1000px;
+}
+.logo {
+  max-width: 100px;
+  max-height: 100px;
+  padding: 10px;
 }
 
-header li,
-i {
-  display: inline-block;
-  margin: 10px;
-  padding: auto;
+/* LINKS */
+a {
+  text-decoration: none;
 }
 
+header a:hover {
+  color: #feab00;
+}
+
+.active_site {
+  color: #feab00;
+}
 /* MAIN */
+
+.welcome {
+  background-image: url(../images/Bakgrunn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 95vh;
+  position: relative;
+  margin: 0px;
+  display: flex;
+}
 
 main h1 {
   color: #feab00;
+  margin-bottom: 100px;
+  font-size: 6em;
+}
+
+.welcome_content {
+  display: inline-block;
+  position: absolute;
   text-align: center;
-  font-size: 80px;
-  padding: 40px;
+  top: 10vh;
+  margin: auto auto auto 500px;
+  max-width: 1000px;
 }
 
 .cta_button {
-  display: grid;
-  border: 5px solid white;
-  text-align: center;
-  position: relative;
-  align-items: center;
-  font-size: 2em;
-  color: white;
   background-color: #25a3f5;
-  text-decoration: none;
-  padding: 20px;
-  margin-top: 50px;
-  margin-left: 700px;
-  margin-right: 700px;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 20px 200px;
+  border-radius: 30px;
 }
+
 .cta_button:hover {
   background-color: #feab00;
 }
@@ -96,11 +88,10 @@ main h1 {
   background: #25a3f5;
   color: white;
   height: auto;
-  position: relative;
 }
 
 .footer-content {
-  display: grid;
+  display: flex;
   padding: 20px;
 }
 
@@ -109,16 +100,13 @@ footer p {
 }
 
 .footer .footer-contact {
-  display: grid;
-  grid-column: 1;
+  margin-left: 50px;
 }
 
 .footer .footer-info {
-  display: grid;
-  grid-column: 2;
+  margin-left: 200px;
 }
 
 .footer .footer-subscribe {
-  display: grid;
-  grid-column: 3;
+  margin-left: 200px;
 }
