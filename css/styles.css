@@ -27,21 +27,27 @@ nav ul {
 .logo {
   max-width: 100px;
   max-height: 100px;
-  padding: 10px;
+  padding: px;
 }
 
 /* LINKS */
 a {
   text-decoration: none;
+  color: white;
 }
 
-header a:hover {
+a:hover {
+  color: #feab00;
+}
+
+i:hover {
   color: #feab00;
 }
 
 .active_site {
   color: #feab00;
 }
+
 /* MAIN */
 
 .welcome {
@@ -54,7 +60,100 @@ header a:hover {
   display: flex;
 }
 
-main h1 {
+.welcome2 {
+  background-image: url(../images/universe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  margin: 0px;
+  display: flex;
+}
+
+.about_us {
+  min-height: 95vh;
+  position: relative;
+  margin: 0px;
+  display: flex;
+}
+
+.aboutus_content {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  top: 10vh;
+  margin: auto auto auto 700px;
+  max-width: 1000px;
+}
+
+.about_us p {
+  color: black;
+}
+
+.aboutus_image {
+  max-width: 600px;
+}
+
+main p {
+  color: white;
+  font-size: 2em;
+}
+
+/* MYPROFILE */
+
+.myprofile {
+  background-image: url(../images/Bakgrunn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.myprofile a {
+  background-color: #25a3f5;
+  margin: 95px 250px;
+  border: 5px black;
+  border-radius: 40px;
+  font-size: 2em;
+}
+.profile {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+  align-items: center;
+}
+
+.sign_out {
+  display: grid;
+  grid-column: 2;
+  grid-row: 2;
+  text-align: center;
+  align-items: center;
+}
+
+.offers {
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+  text-align: center;
+  align-items: center;
+}
+
+.my_games {
+  display: grid;
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+  align-items: center;
+}
+
+h1 {
   color: #feab00;
   margin-bottom: 100px;
   font-size: 6em;
@@ -69,17 +168,23 @@ main h1 {
   max-width: 1000px;
 }
 
+.welcome_content p {
+  padding: 20px;
+}
+
 .cta_button {
   background-color: #25a3f5;
   color: white;
-  font-size: 1em;
+  font-size: 2em;
   text-transform: uppercase;
-  padding: 20px 200px;
+  padding: 30px 60px;
   border-radius: 30px;
+  border: 10px solid white;
 }
 
 .cta_button:hover {
-  background-color: #feab00;
+  background-color: #020f59;
+  color: white;
 }
 
 /* FOOTER */
@@ -91,22 +196,39 @@ main h1 {
 }
 
 .footer-content {
-  display: flex;
+  display: grid;
   padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
+.text {
+  font-size: large;
+  font-style: bold;
+}
 footer p {
   margin: 8px;
+  padding: 2px;
 }
 
-.footer .footer-contact {
+footer a {
+  display: grid;
+  height: auto;
+  margin: 8px;
+  padding: 2px;
+}
+
+footer .footer .footer-contact {
   margin-left: 50px;
+  grid-column: 1;
 }
 
 .footer .footer-info {
   margin-left: 200px;
+  grid-column: 2;
 }
 
 .footer .footer-subscribe {
   margin-left: 200px;
+  grid-column: 3;
+  text-align: left;
 }
