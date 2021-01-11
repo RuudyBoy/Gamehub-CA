@@ -170,6 +170,7 @@ h1 {
 
 .welcome_content p {
   padding: 20px;
+  color: #feab00;
 }
 
 .cta_button {
@@ -187,6 +188,189 @@ h1 {
   color: white;
 }
 
+/* SELL GAMES */
+
+.sell_games {
+  background-image: url(../images/Bakgrunn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 95vh;
+  position: relative;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.maintitle_forum {
+  font-size: 2em;
+  padding: 0px;
+  margin: 10px;
+  color: white;
+}
+
+.secondtitle_forum {
+  font-size: 1em;
+  padding: 0px;
+  margin: 0px;
+  color: #feab00;
+}
+
+.sellgames_content {
+  display: grid;
+  grid-column: 2;
+  color: white;
+  background-color: #25a3f5;
+  border: 5px solid white;
+  border-radius: 30px;
+  padding: 0px;
+  text-align: center;
+  align-items: center;
+  margin: 200px 500px;
+}
+
+.selling_form {
+  display: grid;
+  padding: 40px;
+  border: 2px white;
+}
+
+.submit_button {
+  background-color: #25a3f5;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 8px 5px;
+  border-radius: 30px;
+  border: 5px solid white;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.submit_button:hover {
+  background-color: #020f59;
+  color: white;
+}
+
+.back_button {
+  background-color: #25a3f5;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 8px 5px;
+  border-radius: 30px;
+  border: 5px solid white;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.back_button:hover {
+  background-color: #020f59;
+  color: white;
+}
+
+.console_label {
+  padding: 10px;
+  text-align: center;
+  background-color: #25a3f5;
+  border: 4px solid white;
+  border-radius: 40px;
+  position: relative;
+  margin: 10px 200px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+}
+
+/* SIGN IN */
+
+.signin {
+  background-image: url(../images/Bakgrunn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 95vh;
+  position: relative;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.signin_content {
+  display: grid;
+  grid-column: 2;
+  color: white;
+  background-color: #25a3f5;
+  border: 5px solid white;
+  border-radius: 30px;
+  padding: 0px;
+  text-align: center;
+  align-items: center;
+  margin: 200px 500px;
+}
+
+.signin_form {
+  display: grid;
+  padding: 40px;
+  border: 2px white;
+}
+
+form a {
+  color: #feab00;
+}
+
+form a:hover {
+  color: white;
+  text-decoration: underline #020f59;
+}
+
+/* CREATE A ACCOUNT */
+.createaaccount {
+  background-image: url(../images/Bakgrunn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 95vh;
+  position: relative;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.caa_content {
+  display: grid;
+  grid-column: 2;
+  color: white;
+  background-color: #25a3f5;
+  border: 5px solid white;
+  border-radius: 30px;
+  padding: 0px;
+  text-align: center;
+  align-items: center;
+  margin: 200px 200px;
+}
+
+.name_input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.email {
+  display: grid;
+}
+
+.password_input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+fieldset div {
+  padding: 10px 0px;
+}
 /* FOOTER */
 
 .footer {
