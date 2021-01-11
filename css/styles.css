@@ -188,6 +188,38 @@ h1 {
   color: white;
 }
 
+.cartpage {
+  background-image: url(../images/universe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.cartpage_content {
+  background-color: #25a3f5;
+  border-radius: 30px;
+  margin: 50px 40px;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tikitaka {
+  display: grid;
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.tikitaka_cover {
+  width: 120px;
+  height: 170px;
+  margin: 10px;
+}
+
 /* SELL GAMES */
 
 .sell_games {
@@ -371,6 +403,28 @@ form a:hover {
 fieldset div {
   padding: 10px 0px;
 }
+
+.offer_content {
+  display: grid;
+  grid-column: 2;
+  color: white;
+  background-color: #25a3f5;
+  border: 5px solid white;
+  border-radius: 30px;
+  padding: 0px;
+  text-align: center;
+  align-items: center;
+  margin: 200px 100px;
+}
+
+.secondtitle_offers {
+  font-size: 1em;
+  padding: 90px 10px;
+  margin: 0px;
+  color: #feab00;
+  border: 1px solid white;
+}
+
 /* FOOTER */
 
 .footer {
