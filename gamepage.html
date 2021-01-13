@@ -1,4 +1,4 @@
-<TYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,8 @@
     <title>Game Hub | Home</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <body>
+    </head>
+    <body >
         <header>
            <a href="index.html"><img src="images/GameHub_Logo.png" alt="Gamehub logo" class="logo"></a>
             <nav>
@@ -21,16 +22,59 @@
                 
             </nav>
         </header>
-        <main>   
-            <section class="welcome">
-                <div class="welcome_content">
-                    <h1>Welcome to the Hub!</h1>
-                    <a href="gamepage.html" class="cta_button">Buy games</a>
-                    <p>OR</p>
-                    <a href="sellgames.html" class="cta_button">sell games</a>
-                </div>
+        <main class="gamepage">
+        
+        <section class="tikitaka">
+       <hr>
+        <p>Tiki-taka 2021</p>
+        <p class="tikitaka_cover">Tiki-taka 2021</p>
+        <p>PC,XBOX,PLAYSTATION</p>
+        <p class="price">499,-</p>
+        <a class="buy_button" href="Cartpage.html">BUY</a>
+        </section>
+
+        <section class="Shotgun">
+            <hr>
+            <p>Shotgun 3: close range</p>
+            <p class="Shotgun_cover">Shotgun 3: close range</p>
+            <p>PLAYSTATION</p>
+            <p class="price">350,-</p>
+            <a class="buy_button" href="Cartpage.html">BUY</a>
+            </section>
+
+            <section class="Speedywheely">
+               <hr>
+                <p>Speedy wheely </p>
+                <p class="Speedywheely_cover">Speedy wheely</p>
+                <p>PC,XBOX</p>
+                <p class="price">200,-</p>
+                <a class="buy_button" href="Cartpage.html">BUY</a>
                 </section>
-            </main>
+               
+                <section class="search_filter">
+                    <p class="filter_title" >Search filter</p>
+                    <label for="New games">New games</label><input type="checkbox" name="New games" value="New games" id="New games">
+                    <label for="Used games">Used games</label><input type="checkbox" name="Used games" value="Used games" id="Used games">
+                    <label for="Pre-order">Pre-order</label><input type="checkbox" name="Pre-order" value="Pre-order" id="Pre-order">
+                    </section>
+                
+                <section class="genre">
+                    <p class="filter_title">Genre</p>
+                <label for="Racing">Action</label><input type="checkbox" name="Racing" value="Racing" id="Racing">
+                <label for="Racing">Racing</label><input type="checkbox" name="Racing" value="Racing" id="Racing">
+                 <label for="Sports">Sports</label><input type="checkbox" name="Sports" value="Sports" id="Sports">
+               
+                </section> 
+           
+                <section class="supported_system">
+                    <p class="filter_title" >Supported system</p>
+                    <label for="Playstation">Playstation</label><input type="checkbox" name="Playstation" value="Playstation" id="Playstation">
+                    <label for="Xbox">Xbox</label><input type="checkbox" name="Xbox" value="Xbox" id="Xbox">
+                    <label for="New games">Pc</label><input type="checkbox" name="Pc" value="Pc" id="Pc">
+                </section> 
+           
+
+        </main>
        
 
         <footer>
@@ -59,6 +103,7 @@
             </div>
         </footer>
     </body>
-    
-
-</html>
+  
+  
+  
+  </html>
