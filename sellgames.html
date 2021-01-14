@@ -22,61 +22,52 @@
                 
             </nav>
         </header>
-        <main class="sell_games">   
-        <section class="sellgames_content"> 
-          <h1 class="maintitle_forum">Sell your game here</h1> 
-          <h2 class="secondtitle_forum">Enter the forum to sell your game</h2> 
-          
-          <form>
-              <fieldset class="selling_form">
-                  <label for="Name of the game">Name of the game</label>
-                  <input class="console_label" type="text" name="Name of the game">
+        <main class="signin">   
+          <h1>Sell your game here</h1> 
+          <h2>Enter the forum to sell your game</h2> 
+          <section class="signin_content">
+          <form class="signin_form" method="POST">
+                 <label for="Name of the game">Name of the game</label>
+                  <input type="text" name="Name of the game">
                   <label for="Consoles">Gaming console</label>
-                  <select class="console_label" name="Consoles" id="Consoles">
+                  <select name="Consoles" id="Consoles">
                       <option value="Playstation">Playstation</option>
                       <option value="PC">PC</option>
                       <option value="Xbox">Xbox</option>
                   </select>
                   <label for="Country">Country/Region</label>
-                  <select class="console_label" name="Country" id="Country">
+                  <select name="Country" id="Country">
                       <option value="Asia">Asia</option>
                       <option value="Europe">Europe</option>
                       <option value="America">America</option>
                   </select>
-                  <div class="buttons">
-                  <a class="submit_button" href="#">Submit</a>
-                  <a class="back_button" href="gamepage.html"> Back</a>
-                  </div>
-
-              </fieldset>
-          </form>
+            </form>
+          <a class="cta_small" href="#">Back</a>
+          <a class="cta_small" href="gamepage.html"> Submit</a>
         </section>
         </main>
-       
-
-        <footer>
-            <div class="footer">
-                <div class="footer-content">
-                    <div class="footer-contact">
-                        <p class="text">Contact us </p>
-                        <p>+47 123 456 789</p>
-                        <p>Osloveien,1990,Oslo</p>
-                        <p> Gamehub@gmail.com </p>
-                    </div>
-                    <div class="footer-info">
-                        <p class="text">Information</p>
-                        <a href="aboutus.html">About us</a>
-                        <a href="aboutus.html">Terms & Conditions</a>
-                        <a href="aboutus.html">Privacy Policy</a>
-                    </div>
-                    <div class="footer-subscribe">
-                        <form method="POST">
-                            <p class="text">Subscribe for news & offers</p>
-                            <p>Be updated on the newest games and special offers</p>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
-                            <input type="submit" value="Send" class="Send">
-                    </div>
+       <footer>
+            <div class="footer_content">
+                <div class="footer_contact">
+                    <p class="text">Contact us </p>
+                    <p>+47 123 456 789</p>
+                    <p>Osloveien,1990,Oslo</p>
+                    <p> Gamehub@gmail.com </p>
+                </div>
+                <div class="footer_info">
+                    <p class="text">Information</p>
+                    <a href="aboutus.html">About us</a>
+                    <a href="aboutus.html">Terms & Conditions</a>
+                    <a href="aboutus.html">Privacy Policy</a>
+                </div>
+                <div class="footer_subscribe">
+                    <form method="POST">
+                     <p class="text">Subscribe for news & offers</p>
+                    <p>Be updated on the newest games and special offers</p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <input type="submit" value="Send" class="Send">
+                </div>
             </div>
         </footer>
     </body>

@@ -4,6 +4,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
+
 /* HEADER */
 
 header {
@@ -54,7 +55,7 @@ i:hover {
 /* MAIN */
 
 .welcome {
-  background-image: url(../images/Bakgrunn.jpg);
+  background-image: url(../images/gamer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -166,6 +167,9 @@ h1 {
   font-size: 6em;
 }
 
+h2 {
+  color: #feab00;
+}
 .welcome_content p {
   padding: 20px;
   color: #feab00;
@@ -292,6 +296,13 @@ h1 {
   color: ;
 }
 
+label {
+  color: #feab00;
+}
+
+input {
+  border-radius: 40px;
+}
 .sellgames_content {
   display: grid;
   grid-column: 2;
@@ -386,18 +397,6 @@ h1 {
 }
 
 .console_label {
-  padding: 10px;
-  text-align: center;
-  background-color: #25a3f5;
-  border: 4px solid white;
-  border-radius: 40px;
-  margin: 10px 200px;
-  position: relative;
-}
-
-label {
-  font-size: 20px;
-  display: grid;
 }
 
 /* SIGN IN */
@@ -405,20 +404,23 @@ label {
   background-image: url(../images/gamer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   min-height: 100vh;
   margin: 0px;
   text-align: center;
+  align-items: center;
+  display: inline;
 }
 
 .signin_content {
-  display: block;
+  display: inline-block;
   color: white;
-  text-align: center;
+  top: 10vh;
+  max-width: 1000px;
 }
 
 .signin_form {
   display: grid;
-
   padding: 40px;
   border: 2px white;
 }
@@ -602,92 +604,104 @@ hr {
 }
 /* FOOTER */
 
-.footer {
+footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
   background: #25a3f5;
   color: white;
   height: auto;
+  margin: 0px;
 }
 
-.footer-content {
-  display: grid;
-  padding: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
+.footer_info a {
+  display: block;
+  margin: 10px auto;
+}
+.footer_content {
+  display: flex;
 }
 
 .text {
   font-size: large;
-  font-style: bold;
-}
-footer p {
-  margin: 8px;
-  padding: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-footer a {
-  display: grid;
-  height: auto;
-  margin: 8px;
-  padding: 2px;
+.footer_contact {
+  flex-basis: 50%;
+  padding: 10px 30px;
 }
 
-footer .footer .footer-contact {
-  margin-left: 50px;
-  grid-column: 1;
+.footer_info {
+  flex-basis: 50%;
+  padding: 10px 30px;
 }
 
-.footer .footer-info {
-  margin-left: 200px;
-  grid-column: 2;
+.footer_subscribe {
+  flex-basis: 50%;
+  padding: 10px 30px;
 }
 
-.footer .footer-subscribe {
-  margin-left: 200px;
-  grid-column: 3;
-  text-align: left;
-}
-
-@media (max-width: 380px) {
+@media (max-width: 500px) {
   .cta_button {
     padding: 10px;
     border: 2px solid white;
     font-size: 15px;
   }
 
+  html {
+    margin: 0px;
+  }
+
+  .cta_small {
+    padding: 10px;
+    border: 2px solid white;
+    font-size: 10px;
+  }
+
   h1 {
     font-size: 40px;
+    margin-bottom: 10px;
   }
 
   .welcome_content p {
     font-size: 20px;
   }
 
+  .signin_content {
+    font-size: 10px;
+  }
+
+  .signin {
+    text-align: center;
+    align-items: center;
+    display: inline;
+  }
+
   body {
     margin: 0px;
+    overflow-x: hidden;
   }
-  .footer {
+
+  .footer_content {
+    display: inline;
+    font-size: 10px;
     margin: 0px;
-    padding: 0px;
+
+    align-items: center;
   }
-  footer.content {
-    grid-template-columns: 1fr;
+
+  .text {
+    font-size: 10px;
+  }
+
+  footer input {
+    width: 50px;
     display: flex;
   }
-}
 
-@media (min-width: 381px) {
-  .cta_button {
-    padding: 20px;
-    border: 4px solid white;
-    font-size: 20px;
-  }
-
-  h1 {
-    font-size: 50px;
-  }
-
-  body {
-    margin: 0px;
+  .gamehub_info {
+    padding: 0px 20px;
   }
 }
-
-@media;

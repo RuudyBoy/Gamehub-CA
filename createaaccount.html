@@ -22,73 +22,50 @@
                 
             </nav>
         </header>
-        <main class="createaaccount">   
-        <section class="caa_content"> 
-          <h1 class="maintitle_forum">Create your game hub account</h1> 
-          
-          <form>
-              <fieldset>
-            <div class="name_input">
-            <div class="first_name">
+        <main class="signin">  
+           <h1>Create your game hub account</h1>  
+        <section class="signin_content"> 
+          <form class=signin_form method="POST">
                 <label for="First name"> First name</label>
-                <input class="console_label" type="text" name="First name">
-            </div>
-            <div class="last_name">
+                <input type="text" name="First name">
                 <label for="Last name">Last name</label>
-                <input  class="console_label" type="text" name="Last name">
-            </div>
-            </div>
-            <div class="email">
+                <input type="text" name="Last name">
                 <label for="email">Email</label>
-                <input class="console_label" type="email" id="email" name="email">
-            </div>
-                <div class="password_input">
-                <div >
-                  <label for="Password">Password</label>
-                  <input class="console_label" type="password" id="password" name="password">
-                </div>
-                <div>
-                  <label for="Password">Confirm Password</label>
-                  <input class="console_label" type="password" id="password" name="Confirm password">
-                </div>
-                </div>
-                  <a href="signin.html"> Already have a account? Sign in here. </a>
-                
-                  <div class="buttons">
-                  <a class="submit_button" href="#">Submit</a>
-                  <a class="back_button" href="gamepage.html"> Back</a>
-                  </div>
-
-              </fieldset>
+                <input type="email" id="email" name="email">
+                <label for="Password">Password</label>
+                <input type="password" id="password" name="password">
+                <label for="Password">Confirm Password</label>
+                <input type="password" id="password" name="Confirm password">
+                <a href="signin.html"> Already have a account? Sign in here. </a>
           </form>
+          <a class="cta_small" href="index.html">Back</a>
+          <a class="cta_small" href="homepage.html"> Home page</a>
         </section>
         </main>
-       
-
-        <footer>
-            <div class="footer">
-                <div class="footer-content">
-                    <div class="footer-contact">
-                        <p class="text">Contact us </p>
-                        <p>+47 123 456 789</p>
-                        <p>Osloveien,1990,Oslo</p>
-                        <p> Gamehub@gmail.com </p>
-                    </div>
-                    <div class="footer-info">
-                        <p class="text">Information</p>
-                        <a href="aboutus.html">About us</a>
-                        <a href="aboutus.html">Terms & Conditions</a>
-                        <a href="aboutus.html">Privacy Policy</a>
-                    </div>
-                    <div class="footer-subscribe">
-                        <form method="POST">
-                            <p class="text">Subscribe for news & offers</p>
-                            <p>Be updated on the newest games and special offers</p>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
-                            <input type="submit" value="Send" class="Send">
-                    </div>
+       <footer>
+            <div class="footer_content">
+                <div class="footer_contact">
+                    <p class="text">Contact us </p>
+                    <p>+47 123 456 789</p>
+                    <p>Osloveien,1990,Oslo</p>
+                    <p> Gamehub@gmail.com </p>
+                </div>
+                <div class="footer_info">
+                    <p class="text">Information</p>
+                    <a href="aboutus.html">About us</a>
+                    <a href="aboutus.html">Terms & Conditions</a>
+                    <a href="aboutus.html">Privacy Policy</a>
+                </div>
+                <div class="footer_subscribe">
+                    <form method="POST">
+                     <p class="text">Subscribe for news & offers</p>
+                    <p>Be updated on the newest games and special offers</p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <input type="submit" value="Send" class="Send">
+                </div>
             </div>
+                    
         </footer>
     </body>
     
