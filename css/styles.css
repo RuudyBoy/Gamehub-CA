@@ -34,6 +34,15 @@ nav ul {
   padding: px;
 }
 
+nav {
+  margin-left: 25px;
+  display: block;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
 /* LINKS */
 a {
   text-decoration: none;
@@ -181,8 +190,9 @@ main p {
 /* TEXT */
 h1 {
   color: #feab00;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   font-size: 6em;
+  padding: 5px;
 }
 
 h2 {
@@ -202,6 +212,7 @@ h2 {
 
 label {
   color: #feab00;
+  padding: 10px;
 }
 
 input {
