@@ -471,6 +471,34 @@ footer {
 }
 
 @media (min-width: 714px) {
+  h1 {
+    font-size: 30px;
+  }
+  header nav {
+    display: block;
+    position: static;
+  }
+
+  header label {
+    display: none;
+  }
+  header nav li,
+  i {
+    display: inline-block;
+    top: 0px;
+    padding: 10px;
+    margin-left: 5px;
+  }
+
+  header {
+    justify-content: start;
+  }
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 70px;
+  }
   header nav {
     display: block;
     position: static;
