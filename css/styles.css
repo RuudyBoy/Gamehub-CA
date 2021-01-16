@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Acme-regular";
+  src: url(../Fonts/Acme-Regular.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url(../Fonts/Roboto-Black.ttf) format(truetype);
+}
+
 body {
   margin: 0px;
   min-height: 100vh;
@@ -56,6 +66,7 @@ i {
 
 /* LINKS */
 a {
+  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
   text-decoration: none;
   color: white;
 }
@@ -154,6 +165,7 @@ i:hover {
 }
 
 main p {
+  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
   color: white;
   font-size: 2em;
 }
@@ -201,6 +213,7 @@ main p {
 
 /* TEXT */
 h1 {
+  font-family: "Acme-regular", Verdana, Tahoma, sans-serif;
   color: #feab00;
   margin-bottom: 20px;
   font-size: 6em;
@@ -208,11 +221,13 @@ h1 {
 }
 
 h2 {
+  font-family: "Acme-regular", Verdana, Tahoma, sans-serif;
   color: #feab00;
   padding: 40px;
 }
 
 .welcome_content p {
+  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
   padding: 20px;
   color: #feab00;
 }
@@ -223,6 +238,7 @@ h2 {
 }
 
 label {
+  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
   color: #feab00;
   padding: 10px;
 }
@@ -245,6 +261,7 @@ label {
 }
 
 .gamepage p {
+  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
   font-size: large;
   color: white;
 }
@@ -276,10 +293,12 @@ label {
 }
 
 .cartpage h2 {
+  font-family: "Acme-regular", Verdana, Tahoma, sans-serif;
   font-size: 20px;
 }
 
 .cartpage h3 {
+  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
   color: white;
   padding: 5px;
 }
@@ -292,6 +311,7 @@ label {
 }
 
 .searchtitle {
+  font-family: "Acme-regular", Verdana, Tahoma, sans-serif;
   color: white;
   font-size: 50px;
   margin-top: 10px;
@@ -323,29 +343,33 @@ footer {
 }
 
 .text {
+  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
   font-size: large;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .footer_contact {
+  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
   flex-basis: 50%;
   padding: 10px 30px;
 }
 
 .footer_info {
+  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
   flex-basis: 50%;
   padding: 10px 30px;
 }
 
 .footer_subscribe {
+  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
   flex-basis: 50%;
   padding: 10px 30px;
 }
 
 /*MEDIAQUEIRY*/
 
-@media (max-width: 657px) {
+@media (max-width: 713px) {
   .cta_button {
     padding: 10px;
     border: 2px solid white;
@@ -432,10 +456,12 @@ footer {
 
   .cartpage h2,
   h3 {
+    font-family: "Acme-regular", Verdana, Tahoma, sans-serif;
     font-size: 10px;
   }
 
   .cartpage p {
+    font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
     font-size: 20px;
   }
 
@@ -444,7 +470,7 @@ footer {
   }
 }
 
-@media (min-width: 658px) {
+@media (min-width: 714px) {
   header nav {
     display: block;
     position: static;
