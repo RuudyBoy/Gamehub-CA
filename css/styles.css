@@ -21,7 +21,9 @@ i {
 nav li,
 i {
   display: inline-block;
-  padding: 20px 30px;
+  display: none;
+  padding: 40px 5px;
+  background: #25a3f5;
 }
 
 nav ul {
@@ -31,16 +33,25 @@ nav ul {
 .logo {
   max-width: 100px;
   max-height: 100px;
-  padding: px;
 }
 
 nav {
   margin-left: 25px;
-  display: block;
+  position: fixed;
+  z-index: 1000;
+  right: 0px;
+  top: 0px;
+  justify-content: space-evenly;
 }
 
-#hamburger-menu:checked ~ nav {
+#hamburger-menu:checked ~ nav li,
+i {
   display: block;
+  padding: 10px;
+}
+
+#hamburger-menu {
+  display: none;
 }
 
 /* LINKS */
@@ -69,6 +80,7 @@ i:hover {
   padding: 30px 60px;
   border-radius: 30px;
   border: 10px solid white;
+  margin: auto;
 }
 
 .cta_button:hover {
@@ -192,7 +204,7 @@ h1 {
   color: #feab00;
   margin-bottom: 20px;
   font-size: 6em;
-  padding: 5px;
+  padding: 40px;
 }
 
 h2 {
@@ -213,10 +225,6 @@ h2 {
 label {
   color: #feab00;
   padding: 10px;
-}
-
-input {
-  border-radius: 40px;
 }
 
 /* GAMEPAGE */
@@ -258,7 +266,34 @@ input {
   display: inline;
 }
 
-.cta_big {
+.cartpage p,
+img,
+a,
+h2 {
+  margin: 10px auto;
+}
+
+.cartlogo {
+  max-width: 300px;
+  padding: auto;
+}
+
+/* SEARCHPAGE */
+
+.searchlogo {
+  max-width: 300px;
+  margin-top: 40px;
+}
+
+.searchtitle {
+  color: white;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.searchbar {
+  border-radius: 5px;
+  border: 10px solid white;
 }
 
 /* FOOTER */
@@ -309,6 +344,7 @@ footer {
     padding: 10px;
     border: 2px solid white;
     font-size: 15px;
+    margin: 10px auto;
   }
 
   html {
@@ -382,5 +418,40 @@ footer {
 
   .cta_big:hover {
     background-color: #020f59;
+  }
+
+  .cartpage p,
+  img,
+  a,
+  h2 {
+    margin: 0px auto;
+    padding: 10px;
+  }
+
+  .cartlogo {
+    max-width: 200px;
+    padding: auto;
+  }
+}
+
+@media (min-width: 501px) {
+  nav {
+    display: block;
+    position: static;
+  }
+
+  header label {
+    display: none;
+  }
+  nav li,
+  i {
+    display: inline-block;
+    top: 0px;
+    padding: 10px;
+    margin-left: 5px;
+  }
+
+  header {
+    justify-content: start;
   }
 }
