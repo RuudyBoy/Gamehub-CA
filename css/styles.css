@@ -266,16 +266,13 @@ label {
   display: inline;
 }
 
-.cartpage p,
-img,
-a,
-h2 {
-  margin: 10px auto;
-}
-
-.cartlogo {
+. .cartlogo {
   max-width: 300px;
   padding: auto;
+}
+
+.cartpage {
+  margin: 10px auto;
 }
 
 /* SEARCHPAGE */
@@ -418,14 +415,6 @@ footer {
 
   .cta_big:hover {
     background-color: #020f59;
-  }
-
-  .cartpage p,
-  img,
-  a,
-  h2 {
-    margin: 0px auto;
-    padding: 10px;
   }
 
   .cartlogo {
