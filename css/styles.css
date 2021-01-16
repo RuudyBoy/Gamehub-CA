@@ -18,7 +18,7 @@ i {
   color: white;
   padding: 10px;
 }
-nav li,
+header nav li,
 i {
   display: inline-block;
   display: none;
@@ -35,7 +35,7 @@ nav ul {
   max-height: 100px;
 }
 
-nav {
+header nav {
   margin-left: 25px;
   position: fixed;
   z-index: 1000;
@@ -435,7 +435,7 @@ footer {
 }
 
 @media (min-width: 501px) {
-  nav {
+  header nav {
     display: block;
     position: static;
   }
@@ -443,7 +443,7 @@ footer {
   header label {
     display: none;
   }
-  nav li,
+  header nav li,
   i {
     display: inline-block;
     top: 0px;
