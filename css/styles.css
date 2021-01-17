@@ -197,7 +197,7 @@ main p {
 .signin_form {
   display: grid;
   padding: 40px;
-  border: 2px white;
+  border: 1px white;
 }
 
 /* MYACCOUNT */
@@ -399,6 +399,10 @@ footer {
 
   .signin_content {
     font-size: 10px;
+  }
+
+  .signin_form {
+    padding: 10px;
   }
 
   .gamepage {
