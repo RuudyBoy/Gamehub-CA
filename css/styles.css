@@ -138,6 +138,11 @@ i:hover {
   color: white;
 }
 
+.cta_buy {
+  background-color: #25a3f5;
+  padding: 10px 30px;
+}
+
 /* MAIN */
 
 .welcome {
@@ -266,11 +271,6 @@ label {
   color: white;
 }
 
-.cta_buy {
-  background-color: #25a3f5;
-  padding: 10px 30px;
-}
-
 .gamepage_background {
   background-image: url(../images/darkblue.jpg);
   background-size: cover;
@@ -282,6 +282,8 @@ label {
   align-items: center;
   display: inline;
 }
+
+/*CARTPAGE*/
 
 .cartlogo {
   max-width: 300px;
@@ -306,15 +308,15 @@ label {
 /* SEARCHPAGE */
 
 .searchlogo {
-  max-width: 300px;
+  max-width: 200px;
   margin-top: 40px;
 }
 
-.searchtitle {
+h1 .searchtitle {
   font-family: "Acme-regular", Verdana, Tahoma, sans-serif;
   color: white;
-  font-size: 50px;
-  margin-top: 10px;
+  font-size: 20px;
+  margin-top: 5px;
 }
 
 .searchbar {
@@ -382,9 +384,9 @@ footer {
   }
 
   .cta_small {
-    padding: 10px;
+    padding: 5px;
     border: 2px solid white;
-    font-size: 10px;
+    font-size: 8px;
   }
 
   h1 {
@@ -434,6 +436,7 @@ footer {
 
   .gamehub_info {
     padding: 0px 20px;
+    font-size: 15px;
   }
 
   .cta_big {
