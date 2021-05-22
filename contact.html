@@ -37,11 +37,42 @@
          </header>
         <main class="signin">
             <h1>Contact information</h1>
-            <section class="signin_content">
-                <p>+47 123 456 789</p>
-                <p>Osloveien,1990,Oslo</p>
-                <p>gamehub@gmail.com</p>
-            </section>
+            <form id="contactForm">
+                <div>
+                    <label>
+                        Full name(required)
+                        <input name="fullName" id="fullName"/>
+                    </label>
+                    <div class="error" id="fullNameError"> Please enter your name</div>
+                </div>
+
+                <div>
+                    <label>
+                        Subject(minimum 10 characters)
+                        <input name="subject" id="subject"/>
+                    </label>
+                    <div class="error" id="subjectError">Subject must be at least 10 characters </div>
+
+                </div>
+
+                <div>
+                    <label>
+                        Email(required)
+                        <input name="email" id="email"/>
+                    </label>
+                    <div class="error" id="emailError"> Please enter a valid email</div>
+
+                </div>
+
+                <div>
+                    <label>
+                        Address(minimum 25 characters)
+                        <input name="address" id="address"/>
+                    </label>
+                    <div class="error" id="addressError"> address must be at least 25 characters </div>
+                </div>
+                <button>Submit</button>
+            </form>
         </main>
 
         <footer>
@@ -68,5 +99,6 @@
                 </div>
             </div>
         </footer>
+        <script src="js/contact.js"></script>
     </body>
 </html>
