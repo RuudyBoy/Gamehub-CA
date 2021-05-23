@@ -36,7 +36,6 @@ i {
   background: #25a3f5;
 }
 
-
 nav ul {
   padding: 0px;
 }
@@ -258,6 +257,7 @@ label {
   grid-gap: 20px;
   padding: 50px;
   text-align: center;
+  background-color: white;
 }
 
 .gamepage img {
@@ -269,7 +269,7 @@ label {
 .gamepage p {
   font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
   font-size: large;
-  color: white;
+  color: black;
 }
 
 .gamepage_background {
@@ -284,6 +284,30 @@ label {
   display: inline;
 }
 
+.gamepage_titles {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.gameimage {
+  border: 1px solid black;
+}
+
+.gameimage .cta_buy {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.gameimage h2 {
+  color: black;
+  padding: 10px;
+  margin-bottom: 3px;
+}
+
 /*CARTPAGE*/
 
 .cartlogo {
@@ -292,17 +316,54 @@ label {
 }
 
 .cartpage {
-  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
-.cartpage h2 {
+.cartpage_cover {
+  width: 200px;
+}
+
+.cartpage_game {
+  display: grid;
+  grid-column: 2;
+  margin: 10px auto;
+  text-align: center;
+  align-items: center;
+}
+
+.cartpage_form {
+  display: grid;
+  grid-column: 1;
+  text-align: center;
+}
+
+.cartpage_game p {
+  color: black;
+}
+
+.error {
+  padding: 10px;
+}
+
+.info_form {
+  text-align: center;
+  display: block;
+}
+
+.bollemus label {
+  display: grid;
+}
+
+.cartpage_game h2 {
   font-family: "Acme-regular", Verdana, Tahoma, sans-serif;
   font-size: 20px;
+  color: black;
 }
 
-.cartpage h3 {
+.cartpage_game h3 {
   font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
-  color: white;
+  color: black;
   padding: 5px;
 }
 
@@ -321,8 +382,9 @@ h1 .searchtitle {
 }
 
 .searchbar {
-  border-radius: 5px;
-  border: 10px solid white;
+  padding: 5px;
+  border-radius: 0px;
+  border: 5px solid black;
 }
 
 /* FOOTER */
@@ -471,6 +533,7 @@ footer {
   .cartpage p {
     font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
     font-size: 20px;
+    color: black;
   }
 
   hr {

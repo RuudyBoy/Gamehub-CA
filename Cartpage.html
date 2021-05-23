@@ -26,7 +26,8 @@
             <input type="checkbox" id="hamburger-menu">
              <nav>
                  <ul>
-                    <li><a href="homepage.html" >Home</a></li>
+                    <li><a href="homepage.html"> Home</a></li>
+                    <li><a href="gamepage.html"> Gamepage</a></li>
                     <li><a href="searchpage.html">Search</a></li>
                     <li><a href="myaccount.html">My Account</a></li>
                     <li><a href="aboutus.html">About us</a></li>
@@ -35,26 +36,42 @@
                  
              </nav>
          </header>
-        <main class="signin">
-                 
-          <section class="cartpage"> 
-                 <h2>Welcome to the cartpage!</h2>
-                 <hr>
-                 <h2>Cart:1 item(s) available</h2>
-                 <hr>
-                 <h2>Click on "Proceed to checkout" to continue</h2>
-                 <hr>
-                 <div>
+        <main class="cartpage">
+
+            <section class="cartpage_form"> 
+                <h1>Cartpage</h1>
+                <form id="contactForm" class="info_form">
+                    <div class="bollemus">
+                        <label>Full name(required) </label>
+                        <input name="fullName" id="fullName"/>
+                        <div class="error" id="fullNameError"> Please enter your name</div>
+                    </div>  
+                    <div class="bollemus">
+                        <label>Email(required)</label>
+                        <input name="email" id="email"/>
+                        <div class="error" id="emailError"> Please enter a valid email</div>
+                    </div> 
+                    <div class="bollemus">
+                        <label>Address(minimum 25 characters)</label>
+                        <input name="address" id="address"/>
+                        <div class="error" id="addressError"> address must be at least 25 characters </div>
+                    </div>
+                    <div class="bollemus">
+                        <label>Zip code </label>
+                        <input name="subject" id="subject"/>
+                        <div class="error" id="subjectError">Zip code must be at least 4 numbers </div>
+                    </div>
+                  
+                   
+                    <button>Submit</button>
+                </form>
+            </section>
+
+            <div class="cartpage_game">
                  <p>Tiki-taka 2021</p>
-                <img src="images/GameHub_Logo.png" alt="tikitaka cover" class="cartlogo">
+                <img src="images/gamecover.jpg" alt="tikitaka cover" class="cartpage_cover" >
                <h3>Xbox,Playstation</h3> 
             </div>
-               <div>
-               <a class="cta_small" href="gamepage.html">Back to game page,-</a>
-                <a class="cta_small" href="checkoutforum.html">Pay 350,-</a>
-              
-            </div>
-            </section>
         </main>
         <footer>
             <div class="footer_content">
@@ -80,10 +97,7 @@
                 </div>
             </div>
         </footer>
-        
-       
-
-       
+        <script src="js/contact.js"></script>
     </body>
     
 
