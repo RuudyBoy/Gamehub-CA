@@ -37,10 +37,9 @@
              </nav>
          </header>
         <main class="cartpage">
-
-            <section class="cartpage_form"> 
-                <h1>Cartpage</h1>
-                <form id="contactForm" class="info_form">
+                
+                <form id="contactForm" class="cartpage_form">
+                    <h1>Cartpage</h1>
                     <div class="bollemus">
                         <label>Full name(required) </label>
                         <input name="fullName" id="fullName"/>
@@ -61,11 +60,32 @@
                         <input name="subject" id="subject"/>
                         <div class="error" id="subjectError">Zip code must be at least 4 numbers </div>
                     </div>
-                  
-                   
                     <button>Submit</button>
                 </form>
-            </section>
+
+           
+               
+                <form id="contactForm" class="cartpage_form"> 
+                    <h1>Credit card Information</h1>
+                    <div class="bollemus">
+                        <label>Credit card number </label>
+                        <input name="fullName" id="fullName"/>
+                        <div class="error" id="fullNameError"> Please enter your name</div>
+                    </div>  
+                    <div class="bollemus">
+                        <label>Expiration Date</label>
+                        <input name="email" id="email"/>
+                        <div class="error" id="emailError"> Please enter a valid email</div>
+                    </div> 
+                    <div class="bollemus">
+                        <label>CVV</label>
+                        <input name="address" id="address"/>
+                        <div class="error" id="addressError"> address must be at least 25 characters </div>
+                    </div>
+                    <button>Submit</button>
+                   
+                </form>
+               <a href="checkoutsuccess.html" class="cta_button"> Pay now </a>
 
             <div class="cartpage_game">
                  <p>Tiki-taka 2021</p>

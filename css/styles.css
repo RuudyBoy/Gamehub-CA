@@ -84,6 +84,8 @@ i:hover {
 }
 
 .cta_button {
+  grid-column: 1;
+  grid-row: 3;
   background-color: #25a3f5;
   color: white;
   font-size: 2em;
@@ -317,7 +319,7 @@ label {
 
 .cartpage {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: auto auto;
 }
 
 .cartpage_cover {
@@ -325,17 +327,23 @@ label {
 }
 
 .cartpage_game {
-  display: grid;
   grid-column: 2;
+  grid-row: 1;
   margin: 10px auto;
   text-align: center;
   align-items: center;
 }
 
 .cartpage_form {
-  display: grid;
-  grid-column: 1;
   text-align: center;
+  padding-bottom: 10px;
+  padding: auto;
+}
+
+.cartpage h1 {
+  text-align: center;
+  font-size: medium;
+  padding: 10px;
 }
 
 .cartpage_game p {
@@ -344,11 +352,6 @@ label {
 
 .error {
   padding: 10px;
-}
-
-.info_form {
-  text-align: center;
-  display: block;
 }
 
 .bollemus label {
@@ -538,6 +541,26 @@ footer {
 
   hr {
     padding: 10px;
+  }
+
+  .cartpage {
+    display: grid;
+    grid-template-rows: auto;
+  }
+
+  .cartpage_game {
+    display: grid;
+    grid-row: auto;
+    margin: 10px auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .cartpage_form {
+    display: block;
+
+    text-align: center;
+    padding-bottom: 10px;
   }
 }
 
