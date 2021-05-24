@@ -310,6 +310,78 @@ label {
   margin-bottom: 3px;
 }
 
+/*GAMESPAAAAGE*/
+.games {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cart {
+  color: black;
+  border: 4px solid black;
+  max-width: 600px;
+  min-width: 200px;
+  padding: 10px;
+  margin: auto;
+  position: fixed;
+  right: 50px;
+  top: 100px;
+  display: none;
+}
+
+.cart_page {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #25a3f5;
+  border-radius: 20px 0px;
+  padding: 20px;
+  display: grid;
+  justify-content: space-between;
+}
+
+.cart_item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  background: #25a3f5;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.product_image {
+}
+
+.product_button {
+  background: #feab00;
+  border: 2px solid white;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0px;
+  transition: all 1s;
+}
+
+.product_button:hover {
+  cursor: pointer;
+}
+
+.product p {
+  font-size: 20px;
+  color: black;
+}
+
+.cart a {
+  color: #020f59;
+}
+
 /*CARTPAGE*/
 
 .cartlogo {
@@ -522,45 +594,16 @@ footer {
     background-color: #020f59;
   }
 
-  .cartlogo {
-    max-width: 150px;
-    padding: auto;
+  .product {
+    margin: 60px;
   }
 
-  .cartpage h2,
-  h3 {
-    font-family: "Acme-regular", Verdana, Tahoma, sans-serif;
-    font-size: 10px;
-  }
-
-  .cartpage p {
-    font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
-    font-size: 20px;
-    color: black;
-  }
-
-  hr {
-    padding: 10px;
-  }
-
-  .cartpage {
+  .games {
     display: grid;
-    grid-template-rows: auto;
-  }
-
-  .cartpage_game {
-    display: grid;
-    grid-row: auto;
-    margin: 10px auto;
-    text-align: center;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
-  }
-
-  .cartpage_form {
-    display: block;
-
     text-align: center;
-    padding-bottom: 10px;
   }
 }
 
@@ -586,6 +629,18 @@ footer {
 
   header {
     justify-content: start;
+  }
+
+  .product {
+    margin: 60px;
+  }
+
+  .games {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
   }
 }
 
