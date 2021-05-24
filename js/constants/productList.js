@@ -2,7 +2,7 @@ export const gamesArray = [
     {
         name: "Tiki taka 2021",
         description: "Nr.1 football game in the world",
-        Image:"https://images.unsplash.com/photo-1621844019681-d1095d9e5b52?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        Image:"https://images.unsplash.com/photo-1621786527988-ca47b72f9638?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
         id: "1",
         price: 679,
     },
