@@ -36,14 +36,40 @@
              </nav>
          </header>
         <main class="gamepage_background">
+            <div class="background">
             <h1>Top selling games</h1>
+            <div>
+                <a href="gamepage.html"><i class="fas fa-search"></i></a>
+                <input type="search" name="searchbar" class="searchbar">
+            </div>
+            <div class="filters">
+            <div>
+                <p>Search filter</p>
+                <label for="New games">New games</label><input type="checkbox" name="New games" value="New games" id="New games">
+                <label for="Used games">Used games</label><input type="checkbox" name="Used games" value="Used games" id="Used games">
+                <label for="Pre-order">Pre-order</label><input type="checkbox" name="Pre-order" value="Pre-order" id="Pre-order">
+            </div>
+            <div>
+                <p>Genre</p>
+            <label for="Racing">Action</label><input type="checkbox" name="Racing" value="Racing" id="Racing">
+            <label for="Racing">Racing</label><input type="checkbox" name="Racing" value="Racing" id="Racing">
+             <label for="Sports">Sports</label><input type="checkbox" name="Sports" value="Sports" id="Sports">
+            </div>
+            <div>
+                <p>Supported system</p>
+                <label for="Playstation">Playstation</label><input type="checkbox" name="Playstation" value="Playstation" id="Playstation">
+                <label for="Xbox">Xbox</label><input type="checkbox" name="Xbox" value="Xbox" id="Xbox">
+                <label for="New games">Pc</label><input type="checkbox" name="Pc" value="Pc" id="Pc">
+            </div>
+
             <div class="games"></div>
             <div class="cart">
                 <div class="cart_list"></div>
                 <div class="total"> Total:</div>
-                <a href="cart.html"> Checkout</a>
+                <a href="cart.html" class="cta_small"> Checkout</a>
             </div>
-
+        </div>
+        </div>
         </main>
         <footer>
             <div class="footer_content">

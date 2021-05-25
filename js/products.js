@@ -29,15 +29,15 @@ buttons.forEach(function(button){
 })
 
 function theCart (cartItems) {
-    cart.style.display = "block";
+    cart.style.display = "flex";
     cartList.innerHTML= "";
     let total = 0;
     cartItems.forEach(function(cartElement){
         total += cartElement.price;
         cartList.innerHTML += 
         `<div class="cart_item">
-        <h4> ${cartElement.name} </h4>
-        <div style="background-image: url("${cartElement.image}" class="cart_image")</div>
+        <h4>${cartElement.name}</h4>
+        <div style="background-image: url(${cartElement.image})" class="cart_image"</div>
         </div>
         `
 
