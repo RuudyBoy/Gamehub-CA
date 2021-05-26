@@ -8,6 +8,16 @@
   src: url(../Fonts/Roboto-Black.ttf) format(truetype);
 }
 
+@font-face {
+  font-family: "FredokaOne_Regular";
+  src: url(../Fonts/FredokaOne-Regular.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: "PermanentMarker-Regular";
+  src: url(../Fonts/PermanentMarker-Regular.ttf) format(truetype);
+}
+
 body {
   margin: 0px;
   min-height: 100vh;
@@ -15,10 +25,14 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+html {
+  margin: 0px;
+}
+
 /* HEADER */
 
 header {
-  background-color: #25a3f5;
+  background-color: #3d58c0;
   display: flex;
   align-items: center;
 }
@@ -33,7 +47,7 @@ i {
   display: inline-block;
   display: none;
   padding: 40px 5px;
-  background: #25a3f5;
+  background: #3d58c0;
 }
 
 nav ul {
@@ -66,21 +80,31 @@ i {
 
 /*NEW HOMEPAGE*/
 
+.home {
+  background-color: black;
+}
+
 .logo_background {
   max-width: 700px;
 }
 
 .welcome_content {
+  background-color: darkgrey;
   align-items: center;
   margin: 20px;
   margin-top: 0px;
-  background-color: blanchedalmond;
-  border: 5px solid black;
+
   text-align: center;
   top: 10vh;
 }
 
 .options_content {
+  background-image: url(../images/universe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  margin: 0px;
   text-align: center;
   padding: 40px;
 }
@@ -91,15 +115,16 @@ i {
 }
 
 .homepage_buy {
-  background-color: lawngreen;
+  background-color: #3d58c0;
   padding: 100px;
-  margin: 20px;
+  margin: 50px;
   text-align: center;
 }
 
 .cta_homepage {
   display: block;
-  background-color: black;
+  color: #3d58c0;
+  background-color: white;
   padding: 20px 50px;
   margin: 40px;
   text-align: center;
@@ -127,41 +152,32 @@ i {
   max-width: 200px;
 }
 
-/* LINKS */
+/* LINKSANDTEXT */
 a {
-  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
+  font-family: "Fredoka One", cursive, Verdana, Tahoma, sans-serif;
   text-decoration: none;
   color: white;
 }
 
 a:hover {
-  color: #feab00;
+  color: #fff700;
 }
 
 i:hover {
-  color: #feab00;
+  color: #fff700;
 }
 
 .active_site {
-  color: #feab00;
+  color: #fff700;
 }
 
-.cta_button {
-  grid-column: 1;
-  grid-row: 3;
-  background-color: #25a3f5;
-  color: white;
-  font-size: 2em;
-  text-transform: uppercase;
-  padding: 30px 60px;
-  border-radius: 30px;
-  border: 10px solid white;
-  margin: auto;
-}
-
-.cta_button:hover {
-  background-color: #020f59;
-  color: white;
+p {
+  font-family: "Fredoka One", cursive, Verdana, Tahoma, sans-serif;
+  color: #002554;
+  font-size: 15px;
+  text-align: center;
+  max-width: 250px;
+  margin: 0 auto;
 }
 
 .cta_myaccount {
@@ -174,12 +190,9 @@ i:hover {
   margin: 20px;
 }
 
-.cta_big:hover {
-  background-color: #020f59;
-}
-
 .cta_small {
-  background-color: #25a3f5;
+  background-color: #3d58c0;
+  border-radius: 10px;
   color: white;
   font-size: 1em;
   text-transform: uppercase;
@@ -188,53 +201,72 @@ i:hover {
   margin: 20px;
 }
 
-.cta_small_mark {
-  background-color: #25a3f5;
-  color: white;
-  font-size: 1em;
-  text-transform: uppercase;
-  padding: 0px 5px;
-  border-radius: 30px;
-  border: 4px solid white;
-}
-
 .cta_small:hover {
   background-color: #020f59;
   color: white;
 }
 
-.cta_buy {
-  background-color: #25a3f5;
-  padding: 10px 30px;
+h1 {
+  font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
+  text-align: center;
+  color: #69fd9f;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Fredoka One", cursive, Verdana, Tahoma, sans-serif;
+  color: #3d58c0;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
+  color: #69fd9f;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
+  color: #25a3f5;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.success_mark {
+  max-width: 300px;
+  align-items: center;
+}
+
+label {
+  display: block;
+  font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
+  color: #69fd9f;
+  padding: 10px;
+}
+
+footer p {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  padding: 20px;
+}
+
+button {
+  margin: 20px;
 }
 
 /* MAIN */
 
-.welcome {
-  background-image: url(../images/gamer.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0px;
-  text-align: center;
-}
-
-.welcome2 {
-  background-image: url(../images/universe.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  text-align: center;
-}
-
-main p {
-  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
-  color: black;
-  font-size: 2em;
-}
-
 .signin {
-  background-image: url(../images/gamer.jpg);
+  background-image: url(../images/NYEBAKGRUNN.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -246,7 +278,8 @@ main p {
 }
 
 .signin_content {
-  display: inline-block;
+  text-align: center;
+  display: block;
   color: white;
   top: 10vh;
   max-width: 1000p;
@@ -254,7 +287,7 @@ main p {
 
 /* MYACCOUNT */
 
-.myprofile {
+.myaccount {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -263,96 +296,6 @@ main p {
   text-align: center;
   padding: 50px;
   margin: 20px auto;
-}
-
-/* TEXT */
-h1 {
-  font-family: "Acme-regular", Verdana, Tahoma, sans-serif;
-  color: #feab00;
-  margin-bottom: 20px;
-  font-size: 6em;
-  padding: 40px;
-  text-align: center;
-}
-
-h2 {
-  font-family: "Acme-regular", Verdana, Tahoma, sans-serif;
-  color: #feab00;
-  padding: 40px;
-}
-
-.welcome_content p {
-  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
-  padding: 20px;
-  color: #feab00;
-}
-
-.success_mark {
-  max-width: 300px;
-  align-items: center;
-}
-
-label {
-  display: block;
-  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
-  color: #feab00;
-  padding: 10px;
-}
-
-/* GAMEPAGE */
-.gamepage {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 1000px;
-  margin: auto;
-  grid-gap: 20px;
-  padding: 50px;
-  text-align: center;
-  background-color: white;
-}
-
-.gamepage img {
-  max-width: 200px;
-  width: 100%;
-  margin-top: 50px;
-}
-
-.gamepage p {
-  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
-  font-size: large;
-  color: black;
-}
-
-.gamepage_background {
-  background-image: url(../images/darkblue.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height: 100vh;
-  margin: 0px;
-  text-align: center;
-  align-items: center;
-  display: inline;
-}
-
-.gamepage_titles {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-  margin: auto;
-  text-align: center;
-  align-items: center;
-}
-
-.gameimage .cta_buy {
-  display: inline-block;
-  margin-bottom: 5px;
-}
-
-.gameimage h2 {
-  color: black;
-  padding: 10px;
-  margin-bottom: 3px;
 }
 
 /*GAMESPAAAAGE*/
@@ -403,14 +346,13 @@ label {
 
 .cta_guidebuttons {
   text-align: center;
-  color: red;
   padding-bottom: 20px;
 }
 
 .theguide_buttons {
-  color: black;
-  background-color: white;
-  border: 3px solid thistle;
+  color: white;
+  background-color: #3d58c0;
+  border-radius: 10px;
   padding: 10px;
 }
 
@@ -441,8 +383,9 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 20px;
-  background: #25a3f5;
+  margin: 60px;
+  background: white;
+  border: 1px solid #3d58c0;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
@@ -455,7 +398,8 @@ label {
 }
 
 .product_button {
-  background: #feab00;
+  color: white;
+  background: #3d58c0;
   border: 2px solid white;
   width: 100%;
   padding: 10px;
@@ -468,28 +412,20 @@ label {
 }
 
 .product p {
-  font-size: 20px;
-  color: black;
+  font-size: 10px;
 }
 
-.cart a {
-  color: #020f59;
-}
-
-.filters {
+.all_filters {
   display: grid;
   padding: 30px;
   margin: auto;
 }
 
-.filters p {
-  font-size: 20px;
-}
-
-.background {
+.filters {
 }
 
 .total {
+  font-family: "Fredoka One", cursive, Verdana, Tahoma, sans-serif;
   padding-bottom: 40px;
 }
 
@@ -498,13 +434,6 @@ label {
 .searchlogo {
   max-width: 200px;
   margin-top: 40px;
-}
-
-h1 .searchtitle {
-  font-family: "Acme-regular", Verdana, Tahoma, sans-serif;
-  color: white;
-  font-size: 20px;
-  margin-top: 5px;
 }
 
 .searchbar {
@@ -519,55 +448,85 @@ footer {
   position: relative;
   bottom: 0px;
   width: 100%;
-  background: #25a3f5;
-  color: white;
+  background: #3d58c0;
+  color: #69fd9f;
   height: auto;
   margin: 0px;
 }
 
-.footer_info a {
-  display: block;
-  margin: 10px auto;
+.fab {
+  padding: 3px;
+  margin: 3px;
+  align-self: center;
+  color: #fff700;
 }
+
+footer a {
+  color: #fff700;
+}
+
+footer i {
+  background-color: #3d58c0;
+}
+
+footer p {
+  max-width: 300px;
+  padding: 10px;
+  color: white;
+}
+
 .footer_content {
-  display: flex;
+  display: inline;
+  align-items: center;
+  text-align: center;
 }
 
-.text {
-  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
-  font-size: large;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.footer_contact {
-  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
+.subscribe {
+  align-self: flex-start;
   flex-basis: 50%;
   padding: 10px 30px;
 }
 
-.footer_info {
-  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
+.entrance {
+  align-self: flex-start;
   flex-basis: 50%;
   padding: 10px 30px;
 }
 
-.footer_subscribe {
-  font-family: "Roboto-Black", Verdana, Tahoma, sans-serif;
+.information {
+  align-self: flex-start;
   flex-basis: 50%;
   padding: 10px 30px;
+}
+
+.follow {
+  font-size: 30px;
+}
+
+input {
+  font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
+  font-size: 20px;
+  border: 1px solid #69fd9f;
+  border-radius: 10px;
+  color: #fff700;
+  background-color: #3d58c0;
+  width: auto;
+}
+
+.Input {
+  background-color: white;
+  color: black;
+}
+
+iframe {
+  height: 500px;
+  width: auto;
+  margin: 0px;
 }
 
 /*MEDIAQUEIRY*/
 
 @media (max-width: 713px) {
-  .cta_button {
-    padding: 10px;
-    border: 2px solid white;
-    font-size: 15px;
-    margin: 10px auto;
-  }
-
   html {
     margin: 0px;
   }
@@ -575,7 +534,7 @@ footer {
   .cta_small {
     padding: 5px;
     border: 2px solid white;
-    font-size: 8px;
+    font-size: 20px;
   }
 
   h1 {
@@ -587,16 +546,11 @@ footer {
   }
 
   .signin_content {
-    font-size: 10px;
+    font-size: 20px;
   }
 
   .signin_form {
     padding: 10px;
-  }
-
-  .gamepage {
-    display: block;
-    flex-direction: column;
   }
 
   .signin {
@@ -624,25 +578,12 @@ footer {
 
   footer input {
     width: 50px;
-    display: flex;
+    display: inline;
   }
 
   .gamehub_info {
-    padding: 0px 20px;
+    padding: 20px 20px;
     font-size: 15px;
-  }
-
-  .cta_big {
-    background-color: #25a3f5;
-    border-radius: 40px;
-    padding: 20px 3px;
-    font: bold;
-    font-size: large;
-    border: 5px solid white;
-  }
-
-  .cta_big:hover {
-    background-color: #020f59;
   }
 
   .product {
@@ -681,9 +622,17 @@ footer {
   header {
     justify-content: start;
   }
+
+  .gamehub_info {
+    padding: 20px 20px;
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 1000px) {
+  .footer_content {
+    display: flex;
+  }
   h1 {
     font-size: 70px;
   }
@@ -705,5 +654,10 @@ footer {
 
   header {
     justify-content: start;
+  }
+
+  .gamehub_info {
+    padding: 20px 20px;
+    font-size: 15px;
   }
 }
