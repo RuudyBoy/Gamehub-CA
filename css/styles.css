@@ -82,6 +82,7 @@ i {
 
 .home {
   margin: 0px;
+  margin: 0px;
   padding: 0px;
 }
 
@@ -90,7 +91,7 @@ i {
 }
 
 .welcome_content {
-  background-image: url(../images/Svartbakgrunn.jpg);
+  background-image: url(../images/NYEBAKGRUNN.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -101,7 +102,7 @@ i {
 }
 
 .options_content {
-  background-image: url(../images/universe.jpg);
+  background-image: url(../images/Svartbakgrunn.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -114,10 +115,18 @@ i {
 .member_content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-image: url(../images/darkblue.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0px;
 }
+
 .homepage_buy {
   background-color: #3d58c0;
-  padding: 100px;
+  border-radius: 10px;
+  border-color: 5px solid #69fd9f;
+  padding: 80px;
   margin: 50px;
   text-align: center;
 }
@@ -157,6 +166,11 @@ i {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   margin: 100px;
+  background-image: url(../images/universe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0px;
 }
 .game {
   text-align: center;
@@ -166,6 +180,8 @@ i {
   size: cover;
   max-width: 200px;
 }
+
+/*TEXT*/
 
 a {
   font-family: "Fredoka One", cursive, Verdana, Tahoma, sans-serif;
@@ -195,7 +211,7 @@ p {
 }
 
 .cta_myaccount {
-  background-color: #25a3f5;
+  background-color: #3d58c0;
   border-radius: 10px;
   padding: 25px 50px;
   font: bold;
@@ -204,27 +220,37 @@ p {
   margin: 20px;
 }
 
+.cta_myaccount:hover {
+  background-color: #3d58c0;
+  border-radius: 10px;
+  padding: 30px 100px;
+  font-size: large;
+  display: inline-block;
+  margin: 20px;
+  transition: all 1s;
+}
+
 .cta_small {
   background-color: #3d58c0;
   border-radius: 10px;
   color: white;
   font-size: 1em;
-  text-transform: uppercase;
   padding: 8px 5px;
   border: 1px solid white;
   margin: 20px;
 }
 
 .cta_small:hover {
+  padding: 16px 10px;
   background-color: #020f59;
-  color: white;
+  color: #69fd9f;
 }
 
 h1 {
   font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
   text-align: center;
   color: #69fd9f;
-
+  margin-top: 0px;
   font-size: 40px;
   text-decoration: none;
 }
@@ -247,7 +273,7 @@ h3 {
 
 h4 {
   font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
-  color: #25a3f5;
+  color: #69fd9f;
   font-size: 20px;
   text-decoration: none;
   text-align: center;
@@ -310,6 +336,8 @@ button {
   padding: 50px;
   margin: 20px auto;
 }
+
+/*NEWGAMEPAGE*/
 
 .games {
   display: grid;
@@ -415,15 +443,19 @@ button {
   width: 100%;
   padding: 10px;
   margin: 20px 0px;
-  transition: all 1s;
 }
 
 .product_button:hover {
   cursor: pointer;
+  padding: 20px;
 }
 
 .product p {
   font-size: 10px;
+}
+
+.product h3 {
+  color: #3d58c0;
 }
 
 .all_filters {
@@ -432,25 +464,47 @@ button {
   margin: auto;
 }
 
+.all_filters p {
+  color: white;
+}
+
+.all_filters label {
+  display: inline-flex;
+}
+
 .total {
   font-family: "Fredoka One", cursive, Verdana, Tahoma, sans-serif;
   padding-bottom: 40px;
 }
 
+/*SEARCHPAGE*/
+
 .searchlogo {
-  max-width: 200px;
+  max-width: 500px;
+  min-width: 150px;
   margin-top: 40px;
 }
 .searchbar {
   padding: 5px;
   border-radius: 0px;
-  border: 5px solid black;
+}
+
+/*ABOUTUS*/
+.aboutus_content {
+  text-align: center;
+  padding: 30px;
 }
 
 /*FOOTER*/
 
 footer {
-  color: #3d58c0;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #3d58c0;
+  color: #69fd9f;
+  height: auto;
+  margin: 0px;
 }
 
 .searchlogo footer {
@@ -483,7 +537,6 @@ footer p {
   color: white;
 }
 .footer_content {
-  background-color: #3d58c0;
   display: inline;
   align-items: center;
   text-align: center;
