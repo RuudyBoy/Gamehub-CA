@@ -81,7 +81,8 @@ i {
 /*NEW HOMEPAGE*/
 
 .home {
-  background-color: black;
+  margin: 0px;
+  padding: 0px;
 }
 
 .logo_background {
@@ -89,13 +90,14 @@ i {
 }
 
 .welcome_content {
-  background-color: darkgrey;
+  background-image: url(../images/Svartbakgrunn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
   align-items: center;
-  margin: 20px;
   margin-top: 0px;
-
   text-align: center;
-  top: 10vh;
 }
 
 .options_content {
@@ -113,27 +115,41 @@ i {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 .homepage_buy {
   background-color: #3d58c0;
   padding: 100px;
   margin: 50px;
   text-align: center;
 }
+.homepage_buy p {
+  color: white;
+}
 
 .cta_homepage {
-  display: block;
+  display: inline-block;
   color: #3d58c0;
   background-color: white;
+  border-radius: 10px;
   padding: 20px 50px;
   margin: 40px;
   text-align: center;
 }
-
+.cta_homepage:hover {
+  display: inline-block;
+  color: #3d58c0;
+  background-color: white;
+  padding: 40px 100px;
+  margin: 40px;
+  text-align: center;
+}
 .become_member {
   border-radius: 10px;
   padding: 20px;
   margin: 20px;
+}
+.color_change {
+  color: white;
+  font-size: 40px;
 }
 
 .bestseller {
@@ -142,7 +158,6 @@ i {
   grid-template-rows: 1fr;
   margin: 100px;
 }
-
 .game {
   text-align: center;
 }
@@ -152,7 +167,6 @@ i {
   max-width: 200px;
 }
 
-/* LINKSANDTEXT */
 a {
   font-family: "Fredoka One", cursive, Verdana, Tahoma, sans-serif;
   text-decoration: none;
@@ -210,6 +224,7 @@ h1 {
   font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
   text-align: center;
   color: #69fd9f;
+
   font-size: 40px;
   text-decoration: none;
 }
@@ -263,12 +278,11 @@ button {
   margin: 20px;
 }
 
-/* MAIN */
-
 .signin {
   background-image: url(../images/NYEBAKGRUNN.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+
   background-position: center center;
   min-height: 100vh;
   margin: 0px;
@@ -285,8 +299,6 @@ button {
   max-width: 1000p;
 }
 
-/* MYACCOUNT */
-
 .myaccount {
   display: grid;
   grid-template-columns: 1fr;
@@ -294,11 +306,11 @@ button {
   grid-gap: 20px;
   align-items: center;
   text-align: center;
+
   padding: 50px;
   margin: 20px auto;
 }
 
-/*GAMESPAAAAGE*/
 .games {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -333,7 +345,6 @@ button {
 
 .cart_item {
 }
-
 .cart_checkout {
   display: grid;
   grid-template-columns: 1fr;
@@ -421,30 +432,28 @@ button {
   margin: auto;
 }
 
-.filters {
-}
-
 .total {
   font-family: "Fredoka One", cursive, Verdana, Tahoma, sans-serif;
   padding-bottom: 40px;
 }
 
-/* SEARCHPAGE */
-
 .searchlogo {
   max-width: 200px;
   margin-top: 40px;
 }
-
 .searchbar {
   padding: 5px;
   border-radius: 0px;
   border: 5px solid black;
 }
 
-/* FOOTER */
+/*FOOTER*/
 
 footer {
+  color: #3d58c0;
+}
+
+.searchlogo footer {
   position: relative;
   bottom: 0px;
   width: 100%;
@@ -468,41 +477,35 @@ footer a {
 footer i {
   background-color: #3d58c0;
 }
-
 footer p {
   max-width: 300px;
   padding: 10px;
   color: white;
 }
-
 .footer_content {
+  background-color: #3d58c0;
   display: inline;
   align-items: center;
   text-align: center;
 }
-
 .subscribe {
   align-self: flex-start;
   flex-basis: 50%;
   padding: 10px 30px;
 }
-
 .entrance {
   align-self: flex-start;
   flex-basis: 50%;
   padding: 10px 30px;
 }
-
 .information {
   align-self: flex-start;
   flex-basis: 50%;
   padding: 10px 30px;
 }
-
 .follow {
   font-size: 30px;
 }
-
 input {
   font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
   font-size: 20px;
@@ -512,53 +515,42 @@ input {
   background-color: #3d58c0;
   width: auto;
 }
-
 .Input {
   background-color: white;
   color: black;
 }
-
 iframe {
   height: 500px;
   width: auto;
   margin: 0px;
 }
 
-/*MEDIAQUEIRY*/
-
 @media (max-width: 713px) {
   html {
     margin: 0px;
   }
-
   .cta_small {
     padding: 5px;
     border: 2px solid white;
     font-size: 20px;
   }
-
   h1 {
     font-size: 2em;
   }
-
   .welcome_content p {
     font-size: 20px;
   }
-
   .signin_content {
     font-size: 20px;
   }
-
   .signin_form {
     padding: 10px;
   }
-
   .signin {
     text-align: center;
     align-items: center;
     display: inline;
   }
-
   body {
     margin: 0px;
     overflow-x: hidden;
@@ -568,37 +560,31 @@ iframe {
     display: inline;
     font-size: 10px;
     margin: 0px;
-
     align-items: center;
   }
-
   .text {
     font-size: 10px;
   }
-
   footer input {
     width: 50px;
     display: inline;
   }
-
   .gamehub_info {
     padding: 20px 20px;
     font-size: 15px;
   }
-
   .product {
     margin: 60px;
   }
-
   .games {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
+
     text-align: center;
   }
 }
-
 @media (min-width: 714px) {
   h1 {
     font-size: 30px;
@@ -607,7 +593,6 @@ iframe {
     display: block;
     position: static;
   }
-
   header label {
     display: none;
   }
@@ -622,17 +607,16 @@ iframe {
   header {
     justify-content: start;
   }
-
   .gamehub_info {
     padding: 20px 20px;
     font-size: 15px;
   }
 }
-
 @media (min-width: 1000px) {
   .footer_content {
     display: flex;
   }
+
   h1 {
     font-size: 70px;
   }
@@ -640,7 +624,6 @@ iframe {
     display: block;
     position: static;
   }
-
   header label {
     display: none;
   }
@@ -655,7 +638,6 @@ iframe {
   header {
     justify-content: start;
   }
-
   .gamehub_info {
     padding: 20px 20px;
     font-size: 15px;
