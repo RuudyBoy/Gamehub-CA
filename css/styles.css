@@ -88,6 +88,18 @@ i {
 
 .logo_background {
   max-width: 700px;
+  padding: 40px;
+}
+
+.welcome {
+  background-image: url(../images/controlbakgrunn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  align-items: center;
+  margin-top: 0px;
+  text-align: center;
 }
 
 .welcome_content {
@@ -143,6 +155,16 @@ i {
   margin: 40px;
   text-align: center;
 }
+
+.cta_gamepage {
+  padding: 40px 80px;
+  background-color: #3d58c0;
+}
+
+.cta_gamepage:hover {
+  padding: 40px 100px;
+}
+
 .cta_homepage:hover {
   display: inline-block;
   color: #3d58c0;
@@ -263,6 +285,10 @@ h2 {
   text-align: center;
 }
 
+.sellgames_h2 {
+  color: white;
+}
+
 h3 {
   font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
   color: #69fd9f;
@@ -296,7 +322,7 @@ footer p {
 }
 
 .error {
-  color: red;
+  color: white;
   padding: 20px;
 }
 
@@ -308,7 +334,6 @@ button {
   background-image: url(../images/NYEBAKGRUNN.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-
   background-position: center center;
   min-height: 100vh;
   margin: 0px;
@@ -452,6 +477,11 @@ button {
 
 .product p {
   font-size: 10px;
+  color: #020f59;
+}
+
+.product_price {
+  color: #020f59;
 }
 
 .product h3 {
@@ -495,6 +525,9 @@ button {
   padding: 30px;
 }
 
+.gamehub_info {
+  color: white;
+}
 /*FOOTER*/
 
 footer {
@@ -585,17 +618,20 @@ iframe {
   .cta_small {
     padding: 5px;
     border: 2px solid white;
-    font-size: 20px;
   }
+
   h1 {
-    font-size: 2em;
+    font-size: 30px;
+    margin: 10px;
   }
   .welcome_content p {
     font-size: 20px;
   }
   .signin_content {
     font-size: 20px;
+    padding: 20px;
   }
+
   .signin_form {
     padding: 10px;
   }
@@ -617,6 +653,7 @@ iframe {
   }
   .text {
     font-size: 10px;
+    margin: 10px;
   }
   footer input {
     width: 50px;
@@ -636,6 +673,27 @@ iframe {
     align-items: center;
 
     text-align: center;
+  }
+
+  .bestseller {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-image: url(../images/universe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0px;
+  }
+
+  .member_content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .Input {
+    max-width: 100px;
   }
 }
 @media (min-width: 714px) {
