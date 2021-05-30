@@ -230,6 +230,7 @@ p {
 }
 .cta_myaccount {
   background-color: #3d58c0;
+  color: white;
   border-radius: 10px;
   padding: 25px 50px;
   font: bold;
@@ -673,7 +674,21 @@ iframe {
   .filters {
     margin-top: 20px;
   }
+
+  .logo_background {
+    max-width: 300px;
+    padding: 40px;
+  }
+
+  .cta_gamepage {
+    padding: 20px 40px;
+  }
+
+  .searchlogo {
+    max-width: 300px;
+  }
 }
+
 @media (min-width: 714px) {
   h1 {
     font-size: 30px;
