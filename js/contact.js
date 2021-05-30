@@ -24,7 +24,7 @@ function forms(event) {
       
     }
 
-    if (subject.value.trim().length >= 4) {
+    if (subject.value.trim().length >= 10) {
         subjectError.style.display = "none";
        
     } else {
