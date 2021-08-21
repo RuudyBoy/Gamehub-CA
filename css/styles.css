@@ -88,6 +88,18 @@ i {
 
 .logo_background {
   max-width: 700px;
+  padding: 40px;
+}
+
+.welcome {
+  background-image: url(../images/controlbakgrunn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  align-items: center;
+  margin-top: 0px;
+  text-align: center;
 }
 
 .welcome_content {
@@ -115,7 +127,7 @@ i {
 .member_content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-image: url(../images/darkblue.jpg);
+  background-image: url(../images/rsz_amr-taha-qucywese3zy-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -143,6 +155,17 @@ i {
   margin: 40px;
   text-align: center;
 }
+
+.cta_gamepage {
+  padding: 40px 80px;
+  background-color: #3d58c0;
+  color: white;
+}
+
+.cta_gamepage:hover {
+  padding: 40px 100px;
+}
+
 .cta_homepage:hover {
   display: inline-block;
   color: #3d58c0;
@@ -172,16 +195,16 @@ i {
   background-position: center center;
   margin: 0px;
 }
+
 .game {
   text-align: center;
 }
-
 .game_cover {
   size: cover;
   max-width: 200px;
 }
 
-/*TEXT*/
+/*TEXTANDLINKS*/
 
 a {
   font-family: "Fredoka One", cursive, Verdana, Tahoma, sans-serif;
@@ -192,15 +215,12 @@ a {
 a:hover {
   color: #fff700;
 }
-
 i:hover {
   color: #fff700;
 }
-
 .active_site {
   color: #fff700;
 }
-
 p {
   font-family: "Fredoka One", cursive, Verdana, Tahoma, sans-serif;
   color: #002554;
@@ -209,9 +229,9 @@ p {
   max-width: 250px;
   margin: 0 auto;
 }
-
 .cta_myaccount {
   background-color: #3d58c0;
+  color: white;
   border-radius: 10px;
   padding: 25px 50px;
   font: bold;
@@ -219,7 +239,6 @@ p {
   display: inline-block;
   margin: 20px;
 }
-
 .cta_myaccount:hover {
   background-color: #3d58c0;
   border-radius: 10px;
@@ -229,7 +248,6 @@ p {
   margin: 20px;
   transition: all 1s;
 }
-
 .cta_small {
   background-color: #3d58c0;
   border-radius: 10px;
@@ -239,13 +257,11 @@ p {
   border: 1px solid white;
   margin: 20px;
 }
-
 .cta_small:hover {
   padding: 16px 10px;
   background-color: #020f59;
   color: #69fd9f;
 }
-
 h1 {
   font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
   text-align: center;
@@ -254,7 +270,6 @@ h1 {
   font-size: 40px;
   text-decoration: none;
 }
-
 h2 {
   font-family: "Fredoka One", cursive, Verdana, Tahoma, sans-serif;
   color: #3d58c0;
@@ -262,7 +277,9 @@ h2 {
   font-size: 30px;
   text-align: center;
 }
-
+.sellgames_h2 {
+  color: white;
+}
 h3 {
   font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
   color: #69fd9f;
@@ -270,7 +287,6 @@ h3 {
   text-decoration: none;
   text-align: center;
 }
-
 h4 {
   font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
   color: #69fd9f;
@@ -278,37 +294,30 @@ h4 {
   text-decoration: none;
   text-align: center;
 }
-
 .success_mark {
   max-width: 300px;
   align-items: center;
 }
-
 label {
   display: block;
   font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
   color: #69fd9f;
   padding: 10px;
 }
-
 footer p {
   text-align: center;
 }
-
 .error {
-  color: red;
+  color: white;
   padding: 20px;
 }
-
 button {
   margin: 20px;
 }
-
 .signin {
   background-image: url(../images/NYEBAKGRUNN.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-
   background-position: center center;
   min-height: 100vh;
   margin: 0px;
@@ -316,7 +325,6 @@ button {
   align-items: center;
   display: inline;
 }
-
 .signin_content {
   text-align: center;
   display: block;
@@ -325,6 +333,8 @@ button {
   max-width: 1000p;
 }
 
+/*MYACCOUNT*/
+
 .myaccount {
   display: grid;
   grid-template-columns: 1fr;
@@ -332,12 +342,11 @@ button {
   grid-gap: 20px;
   align-items: center;
   text-align: center;
-
   padding: 50px;
   margin: 20px auto;
 }
 
-/*NEWGAMEPAGE*/
+/*CARTANDGAMEPAGE*/
 
 .games {
   display: grid;
@@ -360,7 +369,6 @@ button {
   display: none;
   flex-direction: column;
 }
-
 .cart_page {
   max-width: 400px;
   text-align: center;
@@ -370,7 +378,6 @@ button {
   border: 2px solid black;
   padding: 20px;
 }
-
 .cart_item {
 }
 .cart_checkout {
@@ -378,29 +385,25 @@ button {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
 }
-
 .cart_checkout h1 {
   font-size: 20px;
 }
-
 .cta_guidebuttons {
   text-align: center;
   padding-bottom: 20px;
 }
-
 .theguide_buttons {
   color: white;
   background-color: #3d58c0;
   border-radius: 10px;
   padding: 10px;
 }
-
 .cartpage_form {
   text-align: center;
   padding: 40px;
+
   border: 1px white;
 }
-
 .cartpage_cardinfo {
   text-align: center;
   padding: 40px;
@@ -410,14 +413,12 @@ button {
 .cart_checkout label {
   display: block;
 }
-
 .cart_image {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-size: cover;
 }
-
 .product {
   display: flex;
   flex-direction: column;
@@ -430,12 +431,10 @@ button {
   text-align: center;
   align-items: center;
 }
-
 .product_image {
   background-size: cover;
   height: 100px;
 }
-
 .product_button {
   color: white;
   background: #3d58c0;
@@ -444,34 +443,31 @@ button {
   padding: 10px;
   margin: 20px 0px;
 }
-
 .product_button:hover {
   cursor: pointer;
   padding: 20px;
 }
-
 .product p {
   font-size: 10px;
+  color: #020f59;
 }
-
+.product_price {
+  color: #020f59;
+}
 .product h3 {
   color: #3d58c0;
 }
-
 .all_filters {
   display: grid;
   padding: 30px;
   margin: auto;
 }
-
 .all_filters p {
   color: white;
 }
-
 .all_filters label {
   display: inline-flex;
 }
-
 .total {
   font-family: "Fredoka One", cursive, Verdana, Tahoma, sans-serif;
   padding-bottom: 40px;
@@ -489,10 +485,12 @@ button {
   border-radius: 0px;
 }
 
-/*ABOUTUS*/
 .aboutus_content {
   text-align: center;
   padding: 30px;
+}
+.gamehub_info {
+  color: white;
 }
 
 /*FOOTER*/
@@ -516,18 +514,15 @@ footer {
   height: auto;
   margin: 0px;
 }
-
 .fab {
   padding: 3px;
   margin: 3px;
   align-self: center;
   color: #fff700;
 }
-
 footer a {
   color: #fff700;
 }
-
 footer i {
   background-color: #3d58c0;
 }
@@ -546,6 +541,7 @@ footer p {
   flex-basis: 50%;
   padding: 10px 30px;
 }
+
 .entrance {
   align-self: flex-start;
   flex-basis: 50%;
@@ -585,16 +581,17 @@ iframe {
   .cta_small {
     padding: 5px;
     border: 2px solid white;
-    font-size: 20px;
   }
   h1 {
-    font-size: 2em;
+    font-size: 30px;
+    margin: 10px;
   }
   .welcome_content p {
     font-size: 20px;
   }
   .signin_content {
     font-size: 20px;
+    padding: 20px;
   }
   .signin_form {
     padding: 10px;
@@ -608,7 +605,6 @@ iframe {
     margin: 0px;
     overflow-x: hidden;
   }
-
   .footer_content {
     display: inline;
     font-size: 10px;
@@ -617,8 +613,10 @@ iframe {
   }
   .text {
     font-size: 10px;
+    margin: 10px;
   }
   footer input {
+    font-size: 15px;
     width: 50px;
     display: inline;
   }
@@ -634,10 +632,64 @@ iframe {
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
-
     text-align: center;
   }
+  .bestseller {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    background-image: url(../images/universe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0px;
+  }
+  .member_content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .Input {
+    max-width: 100px;
+  }
+
+  .all_filters {
+    display: inline;
+    padding: 30px;
+    margin: auto;
+  }
+
+  .all_filters p {
+    color: white;
+  }
+
+  .filters label {
+    font-size: 15px;
+  }
+
+  .search {
+    display: contents;
+  }
+
+  .filters {
+    margin-top: 20px;
+  }
+
+  .logo_background {
+    max-width: 300px;
+    padding: 40px;
+  }
+
+  .cta_gamepage {
+    padding: 20px 40px;
+  }
+
+  .searchlogo {
+    max-width: 300px;
+  }
 }
+
 @media (min-width: 714px) {
   h1 {
     font-size: 30px;
@@ -656,7 +708,6 @@ iframe {
     padding: 10px;
     margin-left: 5px;
   }
-
   header {
     justify-content: start;
   }
@@ -669,7 +720,6 @@ iframe {
   .footer_content {
     display: flex;
   }
-
   h1 {
     font-size: 70px;
   }
@@ -677,6 +727,7 @@ iframe {
     display: block;
     position: static;
   }
+
   header label {
     display: none;
   }
@@ -687,7 +738,6 @@ iframe {
     padding: 10px;
     margin-left: 5px;
   }
-
   header {
     justify-content: start;
   }
