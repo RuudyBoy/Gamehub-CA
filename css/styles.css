@@ -493,6 +493,15 @@ button {
   color: white;
 }
 
+/*JAVASCRIPT*/
+.details-text p {
+  padding: 10px;
+}
+
+.product_image {
+  max-width: 100px;
+}
+
 /*FOOTER*/
 
 footer {

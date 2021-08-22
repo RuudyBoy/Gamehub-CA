@@ -7,9 +7,8 @@ async function getProducts(url) {
     const products = await response.json();
     console.log(products);
     products.forEach(function (product) {
-        productContainer.innerHTML += ` <a href="gamesdetails.html?name=${product.name}">
+        productContainer.innerHTML += ` <a href="gamesdetails.html?id=${product.id}">
             <div class="product"><h2>${product.name}</h2>
-                <div class="product-image" style="background-image: url('${product.images[0].src}')</div>
         </div> </a>`;
     })
 }

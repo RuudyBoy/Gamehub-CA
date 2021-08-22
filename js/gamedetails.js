@@ -2,21 +2,23 @@ const detailConatiner = document.querySelector(".details-container");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
-const gameName = params.get("name");
-console.log(gameName);
+const id = params.get("id");
+console.log(id);
 
 
 
 const detailsResults = document.querySelector(".details-results");
 const gameContainer = document.querySelector(".gameName");
-gameContainer.innerHTML = gameName;
+gameContainer.innerHTML = id;
 
 
 detailsResults.innerHTML = "";
 
-const url = "http://localhost/flower-power/wp-json/wc/store/products/" + name;
+const url = "http://localhost/flower-power/wp-json/wc/store/products/" + id;
+console.log(url);
 
 async function fetchBook() {
+
     try {
 
         const response = await fetch(url);
@@ -39,6 +41,8 @@ fetchBook();
 
 function createHTML(details) {
 
-    detailsResults.innerHTML = `<h1>${details.id}</h1>`;
+    detailsResults.innerHTML =`<h2> Product name: ${details.name}</h2>
+    <div class="details-text"> ${details.description} 
+    <p> Product price: ${details.prices.price} </p> </div>`;
 
 }
