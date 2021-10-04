@@ -14,7 +14,7 @@ gameContainer.innerHTML = id;
 
 detailsResults.innerHTML = "";
 
-const url = "http://localhost/flower-power/wp-json/wc/store/products/" + id;
+const url = "https://organicflowerpower.org/wp-json/wp/v2/posts" + id;
 console.log(url);
 
 async function fetchBook() {
@@ -41,8 +41,8 @@ fetchBook();
 
 function createHTML(details) {
 
-    detailsResults.innerHTML =`<h2> Product name: ${details.name}</h2>
-    <div class="details-text"> ${details.description} 
-    <p> Product price: ${details.prices.price} </p> </div>`;
+    detailsResults.innerHTML =`<h2> Product name: ${details.id}</h2>
+    <div class="details-text"> 
+    <p> Product price:  </p> </div>`;
 
 }

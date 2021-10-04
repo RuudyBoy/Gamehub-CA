@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost/flower-power/wp-json/wc/store/products";
+const baseUrl = "https://organicflowerpower.org/wp-json/wp/v2/posts";
 const productContainer = document.querySelector(".games");
 
 
@@ -8,7 +8,7 @@ async function getProducts(url) {
     console.log(products);
     products.forEach(function (product) {
         productContainer.innerHTML += ` <a href="gamesdetails.html?id=${product.id}">
-            <div class="product"><h2>${product.name}</h2>
+            <div class="product"><h2>${product.title.rendered}</h2>
         </div> </a>`;
     })
 }
