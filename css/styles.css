@@ -584,9 +584,6 @@ iframe {
 }
 
 @media (max-width: 713px) {
-  html {
-    margin: 0px;
-  }
   .cta_small {
     padding: 5px;
     border: 2px solid white;
@@ -645,9 +642,7 @@ iframe {
   }
   .bestseller {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
+    grid-template-columns: 1fr;
     background-image: url(../images/universe.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -696,6 +691,11 @@ iframe {
 
   .searchlogo {
     max-width: 300px;
+  }
+
+  .homepage_buy {
+    padding: 10px;
+    margin: 10px auto;
   }
 }
 
