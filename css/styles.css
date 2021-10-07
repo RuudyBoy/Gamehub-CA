@@ -112,7 +112,7 @@ i {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 100vh;
+  min-height: 70vh;
   align-items: center;
   margin-top: 0px;
   text-align: center;
@@ -203,8 +203,7 @@ i {
   text-align: center;
 }
 .game_cover {
-  size: cover;
-  max-width: 200px;
+  max-width: 100%;
 }
 
 /*TEXTANDLINKS*/
@@ -700,6 +699,14 @@ iframe {
   .homepage_buy {
     padding: 10px;
     margin: 10px auto;
+  }
+
+  .welcome_content {
+    min-height: 30vh;
+  }
+
+  .game_cover {
+    max-width: 60%;
   }
 }
 
