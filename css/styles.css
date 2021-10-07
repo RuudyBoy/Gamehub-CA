@@ -192,8 +192,6 @@ i {
 .bestseller {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  margin: 100px;
   background-image: url(../images/universe.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -589,7 +587,7 @@ iframe {
   margin: 0px;
 }
 
-@media (max-width: 713px) {
+@media (max-width: 999px) {
   .cta_small {
     padding: 5px;
     border: 2px solid white;
@@ -705,7 +703,7 @@ iframe {
   }
 }
 
-@media (min-width: 714px) {
+@media (min-width: 1000px) {
   h1 {
     font-size: 30px;
   }
@@ -730,11 +728,15 @@ iframe {
     padding: 20px 20px;
     font-size: 15px;
   }
-}
-@media (min-width: 1000px) {
+  
   .footer_content {
     display: flex;
   }
+}
+
+/*
+@media (min-width: 1000px) {
+  
   h1 {
     font-size: 70px;
   }
