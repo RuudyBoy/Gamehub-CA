@@ -708,6 +708,11 @@ iframe {
   .game_cover {
     max-width: 60%;
   }
+
+  .product_cart {
+    padding: 20px;
+    margin: 20px;
+  }
 }
 
 @media (min-width: 1000px) {
