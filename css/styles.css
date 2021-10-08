@@ -14,8 +14,8 @@
 }
 
 @font-face {
-  font-family: "PermanentMarker-Regular";
-  src: url(../Fonts/PermanentMarker-Regular.ttf) format(truetype);
+  font-family: "VarelaRound-Regular";
+  src: url(../Fonts/VarelaRound-Regular.ttf) format(truetype);
 }
 
 body {
@@ -224,7 +224,6 @@ i:hover {
   color: #fff700;
 }
 p {
-  font-family: "Fredoka One", cursive, Verdana, Tahoma, sans-serif;
   color: #002554;
   font-size: 15px;
   text-align: center;
@@ -265,7 +264,7 @@ p {
   color: #69fd9f;
 }
 h1 {
-  font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
+  font-family: "Varela Round", cursive, Verdana, Tahoma, sans-serif;
   text-align: center;
   color: #69fd9f;
   margin-top: 0px;
@@ -283,14 +282,14 @@ h2 {
   color: white;
 }
 h3 {
-  font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
+  font-family: "Varela Round", cursive, Verdana, Tahoma, sans-serif;
   color: #69fd9f;
   font-size: 20px;
   text-decoration: none;
   text-align: center;
 }
 h4 {
-  font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
+  font-family: "Varela Round", cursive, Verdana, Tahoma, sans-serif;
   color: #69fd9f;
   font-size: 20px;
   text-decoration: none;
@@ -302,7 +301,7 @@ h4 {
 }
 label {
   display: block;
-  font-family: "Permanent Marker", cursive, Verdana, Tahoma, sans-serif;
+  font-family: "Varela Round", cursive, Verdana, Tahoma, sans-serif;
   color: #69fd9f;
   padding: 10px;
 }
@@ -323,6 +322,7 @@ button {
   background-position: center center;
   min-height: 100vh;
   margin: 0px;
+  padding-bottom: 20px;
   text-align: center;
   align-items: center;
 }
@@ -353,7 +353,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  max-width: 1000px;
+  max-width: fit-content;
   margin: auto;
   text-align: center;
   align-items: center;
@@ -435,8 +435,7 @@ button {
   align-items: center;
 }
 .product_image {
-  background-size: cover;
-  height: 100px;
+  max-width: 50%;
 }
 .product_button {
   color: white;
@@ -501,8 +500,15 @@ button {
   padding: 10px;
 }
 
-.product_image {
-  max-width: 100px;
+.post-content img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.post-content p {
+  margin: 5px auto;
+  max-width: 80%;
+  color: white;
 }
 
 /*FOOTER*/
@@ -684,7 +690,7 @@ iframe {
   }
 
   .logo_background {
-    max-width: 300px;
+    max-width: 50%;
     padding: 40px;
   }
 

@@ -1,4 +1,3 @@
-const detailConatiner = document.querySelector(".details-container");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -6,19 +5,15 @@ const id = params.get("id");
 console.log(id);
 
 
-
-const detailsResults = document.querySelector(".details-results");
-const gameContainer = document.querySelector(".gameName");
-gameContainer.innerHTML = id;
+const url = "https://organicflowerpower.org/wp-json/wp/v2/posts/" + id;
 
 
-detailsResults.innerHTML = "";
+const postContainer = document.querySelector(".spesific-game");
 
-const url = "https://organicflowerpower.org/wp-json/wp/v2/posts" + id;
-console.log(url);
 
-async function fetchBook() {
+postContainer.innerHTML ="";
 
+async function fetchBook () {
     try {
 
         const response = await fetch(url);
@@ -29,20 +24,21 @@ async function fetchBook() {
         createHTML(details);
 
     }
-
+    
     catch (error) {
-        console.log("error");
-        detailsResults.innerHTML = "An error has occured :("
-    }
+     console.log("error");
+     postContainer.innerHTML = "An error has occured :("
+ }
 }
 
-fetchBook();
-
+fetchBook ();
 
 function createHTML(details) {
 
-    detailsResults.innerHTML =`<h2> Product name: ${details.id}</h2>
-    <div class="details-text"> 
-    <p> Product price:  </p> </div>`;
+    document.title = ` Article| ${details.title.rendered}`;
+
+    postContainer.innerHTML =` <div class="postName"> <h1> ${details.title.rendered} </h1> <hr> </div>
+    <div class="post-content">  ${details.content.rendered} </div>`;
 
 }
+
